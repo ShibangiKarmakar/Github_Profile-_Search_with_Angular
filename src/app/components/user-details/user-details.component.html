@@ -1,0 +1,45 @@
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{userDetails.avatar_url}}" class="img-fluid rounded-start" alt="photo" width="200px" height="200px">
+      </div>
+    
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">User's Name : {{userDetails.login}}</h5>
+          <p class="card-text">User's Bio : {{userDetails.bio}}</p>
+          <p class="card-text">Total Repository : {{userDetails.public_repos}}</p>
+          <p class="card-text"><small class="text-muted">Joined : {{userDetails.created_at | date}}</small></p>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0" style="max-height: 38px;">
+      <div class="col-md-4">
+        <h3> Repositorirs</h3>
+      </div>
+    </div>
+  </div>
+    <div class="card mb-3" style="max-width: 530px;">
+      <div class="col-md-8" style="max-height: 500px;">
+        <div class="card-body">
+          <!--
+          <p class="card-text">Repo name : {{userDetails.repos.name[0]}}</p>
+          <p class="card-text">User's Bio : {{userDetails.repos.id[0]}}</p>
+        -->
+          <!--
+          <ul class="list-group">
+            <li *ngFor="let repo of githubRepos" class="list-group-item d-flex justify-content-between">
+              <a href="/" class="text-primary h3" target=""_blank>name</a>
+              <span class="badge badge-success">starts</span>
+              <span class="badge badge-warning">starts</span>
+            </li>
+          </ul>
+        -->
+        </div>
+      </div>
+    
+    </div>
